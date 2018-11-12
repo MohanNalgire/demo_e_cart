@@ -1,0 +1,9 @@
+<div class="container">
+  <form  (submit)="login($event)" #loginForm="ngForm" novalidate >
+    <label>User </label><input type="text" name="user" >
+    <label>Password</label><input type="password" name="password" >
+    <input type="submit" value="Submit" name="submit" >
+    
+    <input type="button" value="Cancel" name="cancel" (click)="cancelLogin($event)" >
+  </form>
+</div>
